@@ -1,0 +1,23 @@
+- Parler des paramètre du service Rstudio :
+    - memory - allocation de mémoire du service 
+
+    - l'option du choix du nombre de processeur 
+
+    - Enable IP Protection : est une option de sécurité informatique assez contraignante, qui est activée par défaut. 
+    Il est conseillé de la laisser activée. Toutefois, vous pouvez éventuellement la désactiver
+    notamment si vous savez que vous allez devoir accéder à l’environnement RStudio depuis des adresses IP différentes
+    (exemple : au bureau puis en télétravail).
+
+    - L’option version (dans l’onglet Service) détermine l’environnement dans lequel RStudio va s’ouvrir.
+    Il s’agit d’un environnement contenant une version donnée de R ainsi que des packages pré-installés.
+    Par exemple, l’image utilitR disponible propose l’ensemble des dépendances (elles sont nombreuses…)
+    nécessaires pour reproduire tous les exemples présents dans cette documentation.
+
+    -L’option PersonalInit (dans l’onglet Init) permet de référencer un script d’initialisation qui exécutera une série d’actions prédéfinies avant de lancer le service,
+    par exemple copier localement des données, lancer un projet RStudio ou définir des paramètres d’affichage de l’interface.
+    Un exemple d’un tel fichier Init utilisé pour des formations peut être trouvé ici.
+    C’est l’URL du fichier sur github.com qui doit être référencé,
+    dans sa version Raw (afficher le fichier dans Github et cliquer sur Raw en haut à droite pour obtenir cette URL).
+
+- Parler de l'utitilisation de R dans le service Rstudio où git est préinstallé
+
